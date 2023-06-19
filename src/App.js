@@ -12,9 +12,10 @@ function App() {
       <Navbar />
       <section id="about">
         <h2>About Me</h2>
-        <p>Hi, I'm Shant Sharma, a software developer from Edmonton, Alberta. 
-          I have a degree from Macewan University, and I'm passionate about 
-          creating clean and efficient code.</p>
+        <p>Hello, I'm Shant Sharma, a software developer from Edmonton, Alberta. 
+          I have a degree from Macewan University, and I'm passionate about creating 
+          fun and interesting projects. I have experience with embedded systems, object oriented
+          programming, as well as front-end and back-end development.</p>
       </section>
       <section id="projects">
         <h2>My Projects</h2>
@@ -48,6 +49,12 @@ function App() {
               <li>Javascript</li>
             </ul> 
         </section>
+
+    {/* Download my resume here section will actually work one day*/}
+    <section id = "Resume">
+            <h2>Download my resume here</h2>
+        </section>
+
 
     {/* Contact me section will be have connection to a database one day */}
       <section id="contact">

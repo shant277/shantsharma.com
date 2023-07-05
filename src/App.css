@@ -1,7 +1,23 @@
 .App {
   text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.Skills {
+  justify-content: center;
+  text-align: left;
+}
+p {
+    text-align: left;
+    padding-left: 50px;
+}
+
+h2 {
+    text-align: center;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;

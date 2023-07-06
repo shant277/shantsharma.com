@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
+import Projects from "./pages/Projects";
+import { Route, Routes } from "react-router-dom";
 
 const summary = [
   "Hi, I'm Shant Sharma, a software developer from Edmonton, Alberta. Here's a bit of info about me: ",
@@ -20,6 +22,12 @@ function App() {
       <header>
         <h1>My Portfolio</h1>
       </header>
+
+      <Routes>
+        <Route path="/"  element={<Projects />} >
+        
+        </Route>
+      </Routes>
 
       <Navbar />
 

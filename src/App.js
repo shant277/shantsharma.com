@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
+import Projects from "./pages/Projects.js";
+import { Route, Routes } from "react-router-dom";
 
 const summary = [
   "Hi, I'm Shant Sharma, a software developer from Edmonton, Alberta. Here's a bit of info about me: ",
@@ -21,12 +23,13 @@ function App() {
         <h1>My Portfolio</h1>
       </header>
 
+      <Routes>
+        <Route path="/" element={<Projects />}></Route>
+      </Routes>
+
       <Navbar />
 
-      <div
-        className="Summary"
-        id="summary"
-      >
+      <div className="Summary" id="summary">
         <section id="about">
           <h2>About Me</h2>
           <p>

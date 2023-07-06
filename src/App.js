@@ -1,7 +1,7 @@
 import React from "react";
 import "./App.css";
 import Navbar from "./components/navbar/Navbar";
-import Projects from "./pages/Projects";
+import Projects from "./pages/Projects.js";
 import { Route, Routes } from "react-router-dom";
 
 const summary = [
@@ -24,17 +24,12 @@ function App() {
       </header>
 
       <Routes>
-        <Route path="/"  element={<Projects />} >
-        
-        </Route>
+        <Route path="/" element={<Projects />}></Route>
       </Routes>
 
       <Navbar />
 
-      <div
-        className="Summary"
-        id="summary"
-      >
+      <div className="Summary" id="summary">
         <section id="about">
           <h2>About Me</h2>
           <p>

@@ -1,9 +1,9 @@
 import React from "react";
 import "./App.css";
-import Navbar from "./components/navbar/Navbar";
 import Projects from "./pages/Projects.js";
 import Summary from "./pages/Summary";
 import * as Constants from "./constants/Constants";
+import { Header } from "./components/navbar/headerNavBar";
 
 const summary = Constants.summary;
 const projects = Constants.projects;
@@ -11,10 +11,10 @@ const projects = Constants.projects;
 function App() {
   return (
     <div className="App">
+      <Header />
       <h1> </h1>
       <h1>My Portfolio</h1>
 
-      <Navbar />
       <Summary summary={summary}></Summary>
       <Projects projects={projects}></Projects>
 

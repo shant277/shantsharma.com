@@ -31,6 +31,10 @@
       "name": "eject",
       "command": "npm run eject",
       "runAtStart": false
+    },
+    "npm i --save @fortawesome/fontawesome-svg-core npm install --save @fortawesome/free-solid-svg-icons npm install --save @fortawesome/react-fontawesome": {
+      "name": "npm i --save @fortawesome/fontawesome-svg-core npm install --save @fortawesome/free-solid-svg-icons npm install --save @fortawesome/react-fontawesome",
+      "command": "npm i --save @fortawesome/fontawesome-svg-core npm install --save @fortawesome/free-solid-svg-icons npm install --save @fortawesome/react-fontawesome"
     }
   }
 }

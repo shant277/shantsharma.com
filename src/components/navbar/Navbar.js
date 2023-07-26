@@ -11,6 +11,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
+        
       <ul className="navbar_menu">
         <li className="navbar_item" onClick={() => scrollToSection("summary")}>
           About

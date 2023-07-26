@@ -5,6 +5,7 @@ import Summary from "./pages/Summary";
 import * as Constants from "./constants/Constants";
 import { Header } from "./components/navbar/headerNavBar";
 
+
 const summary = Constants.summary;
 const projects = Constants.projects;
 
@@ -12,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Header />
-      <h1> </h1>
+      <h1></h1>
       <h1>My Portfolio</h1>
 
       <Summary summary={summary}></Summary>

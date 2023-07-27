@@ -1,0 +1,21 @@
+.summary-container {
+  border: 3px solid #080808;
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.summary-child {
+  width: 50%;
+  padding: 20px;
+  border-style: hidden;
+}
+
+.profile-pic {
+  max-width: 25%;
+  height: auto;
+  border-radius: 50%;
+  border: 5px solid #0c0c0c;
+}

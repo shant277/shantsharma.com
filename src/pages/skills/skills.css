@@ -1,0 +1,14 @@
+.skills-container {
+  padding: 20px 16px;
+  display: flex; 
+  flex-wrap: wrap; /*  Allow skill cards to wrap to the next line */
+  justify-content: center; /* Center the skill cards horizontally */
+}
+.skill-card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  padding-right: 30px;
+  margin: 10px;
+  text-align: match-parent;
+}

@@ -1,7 +1,7 @@
 //taken from https://www.thekrazydev.com/how-to-open-a-dropdown-menu-on-hover-in-react/ wtih modifications
 // to work with my navbar component
 
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef } from "react";
 import Navbar from "./Navbar";
 import { NavbarHover } from "./NavbarHover";
 import "./headerNavbar.css";
@@ -25,8 +25,6 @@ export function Header() {
   return (
     <div
       ref={dropdownRef}
-      // onMouseOver={handleMouseOver}
-      //  onMouseLeave={handleMouseLeave}
       className="hoverButtonWrapper"
     >
       {

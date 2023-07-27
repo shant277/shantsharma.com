@@ -1,5 +1,5 @@
 import "./Summary.css";
-import BulletPoints from "../components/BulletPoints";
+import BulletPoints from "../../components/BulletPoints";
 
 function Summary(props) {
   const intro = props.summary[0];
@@ -8,7 +8,6 @@ function Summary(props) {
   return (
     <div className="summary" id="summary">
       <section id="about">
-        <h2>About Me</h2>
         <p>{intro}</p>
         <BulletPoints content={summary}></BulletPoints>
       </section>

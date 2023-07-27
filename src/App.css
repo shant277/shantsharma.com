@@ -1,23 +1,16 @@
 .App {
   text-align: center;
-  justify-content: center;
+  justify-content: left;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.Skills {
+.info-card {
   justify-content: center;
   text-align: left;
 }
-p {
-    text-align: left;
-    padding-left: 50px;
-}
 
-h2 {
-    text-align: center;
-}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -27,6 +20,10 @@ h2 {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
+}
+
+.title h1 h4 {
+  display: inline-block;
 }
 
 .App-header {
@@ -51,4 +48,19 @@ h2 {
   to {
     transform: rotate(360deg);
   }
+}
+
+.education-container {
+  padding: 20px 16px;
+}
+.education-container li {
+  text-align: left;
+}
+
+.skills-container {
+  justify-content: center;
+}
+
+.skills-container h2{
+  text-align: left;
 }

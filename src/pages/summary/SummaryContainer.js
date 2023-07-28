@@ -5,7 +5,7 @@ import "./SummaryContainer.css";
 
 function SummaryContainer() {
   return (
-    <div className="summary-container">
+    <div className="summary-container" id="summary">
       <div className="summary-child">
         <div className="profile-picture">
           <img src={profilePicture} className="profile-pic" alt="pineapple" />
@@ -13,7 +13,7 @@ function SummaryContainer() {
         <div>About me</div>
       </div>
       <div className="summary-child">
-        <div className="about-me" id="summary">
+        <div className="about-me" >
           <Summary summary={summary}></Summary>
         </div>
       </div>

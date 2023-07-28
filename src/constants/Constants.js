@@ -61,4 +61,5 @@ export const skills = [
   "Linux",
   "Amazon Lightsail",
   "Amazon firebase",
+  "VsCode",
 ];

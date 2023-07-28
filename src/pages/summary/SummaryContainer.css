@@ -10,7 +10,6 @@
 .summary-child {
   width: 50%;
   padding: 20px;
-  border-style: hidden;
 }
 
 .profile-pic {
@@ -18,4 +17,5 @@
   height: auto;
   border-radius: 50%;
   border: 5px solid #0c0c0c;
+  border-style: solid;
 }

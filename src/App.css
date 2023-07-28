@@ -5,7 +5,9 @@
   flex-direction: column;
   align-items: center;
 }
-
+.wrapper-container {
+  justify-content: left;
+}
 .info-card {
   justify-content: center;
   text-align: left;
@@ -26,17 +28,6 @@
   display: inline-block;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
@@ -52,6 +43,9 @@
 
 .education-container {
   padding: 20px 16px;
+  justify-content: center;
+  text-align: left;
+  
 }
 .education-container li {
   text-align: left;
@@ -61,6 +55,6 @@
   justify-content: center;
 }
 
-.skills-container h2{
+.skills-container h2 {
   text-align: left;
 }

@@ -20,14 +20,12 @@ function projectCards(props) {
 
   return (
     <div className="project-container">
-      <h2 className="info-card">My Projects</h2>
       {projectArray.map((project, index) => (
         <div key={index} className="project-card">
           <h3>{project.title}</h3>
           <p>
             <BulletPoints content={project.description} />
           </p>
-          <p>A link to a demo/more description page will go here</p>
         </div>
       ))}
     </div>

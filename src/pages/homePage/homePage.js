@@ -14,7 +14,7 @@ function HomePage() {
 
       <div className="title">
         <h1>Shant Sharma</h1>
-        <h4>Software Developer</h4>
+        <h4>Software Developer HELLO WORLD!!</h4>
       </div>
 
       <SummaryContainer />

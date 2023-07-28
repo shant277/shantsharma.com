@@ -4,6 +4,8 @@ import { Header } from "../../components/navbar/headerNavBar";
 import SummaryContainer from "../summary/SummaryContainer";
 import Skills from "../skills/skills.js";
 import TopNavbar from "../../components/navbar/TopNavbar.js";
+import TopButton from "../../components/TopButton/TopButton.js";
+
 import "../../App.css";
 
 function HomePage() {
@@ -53,6 +55,7 @@ function HomePage() {
       <footer>
         <p>&copy; 2023 Shant Sharma. All rights reserved.</p>
       </footer>
+      <TopButton/>
     </div>
   );
 }

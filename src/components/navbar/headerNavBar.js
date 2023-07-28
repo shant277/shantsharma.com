@@ -24,7 +24,7 @@ export function Header() {
   useEffect(() => {
     // Add an event listener to the scroll event
     const handleScroll = () => {
-      const quarterPoint = window.innerHeight / 4; // Halfway point of the window's height
+      const quarterPoint = window.innerHeight / 8; // Halfway point of the window's height
       const scrollPosition = window.scrollY; // Current scroll position
 
       // Check if scroll position is greater than or equal to the halfway point

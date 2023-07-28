@@ -10,7 +10,7 @@ const TopNavbar = () => {
   };
 
   return (
-    <nav className="top-navbar">
+    <nav className="top-navbar" id="top">
       <ul className="top-navbar_menu">
         <li
           className="top-navbar_item"

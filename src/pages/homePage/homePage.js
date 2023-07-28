@@ -3,11 +3,13 @@ import { projects, skills } from "../../constants/Constants";
 import { Header } from "../../components/navbar/headerNavBar";
 import SummaryContainer from "../summary/SummaryContainer";
 import Skills from "../skills/skills.js";
+import TopNavbar from "../../components/navbar/TopNavbar.js";
 import "../../App.css";
 
 function HomePage() {
   return (
     <div className="App">
+      <TopNavbar />
       <Header />
 
       <div className="title">
@@ -16,12 +18,15 @@ function HomePage() {
       </div>
 
       <SummaryContainer />
-      <Projects projects={projects}></Projects>
 
-      <div className="education-container" id="education">
-        <h2 className="info-card">Education</h2>
-        <h3>Bachelor of Science in Computer Science</h3>
-        <li>Minor in History</li>
+      <div className="wrapper-container">
+        <Projects projects={projects}></Projects>
+
+        <div className="education-container" id="education">
+          <h2 className="info-card">Education</h2>
+          <h3>Bachelor of Science in Computer Science</h3>
+          <li>Minor in History</li>
+        </div>
       </div>
       <Skills skills={skills}></Skills>
       {/* Contact me section will be have connection to a database one day */}

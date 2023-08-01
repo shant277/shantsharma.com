@@ -10,10 +10,10 @@ function SummaryContainer() {
         <div className="profile-picture">
           <img src={profilePicture} className="profile-pic" alt="pineapple" />
         </div>
-        <div>About me</div>
+        <div className="about-me">About me</div>
       </div>
       <div className="summary-child">
-        <div className="about-me" >
+        <div>
           <Summary summary={summary}></Summary>
         </div>
       </div>

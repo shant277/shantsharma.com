@@ -43,6 +43,14 @@ export const projects = {
       " Set up user accounts and assigned permissions according to a need-to-know basis",
     ],
   ],
+  project5: [
+    "TESTTTTTTTTTHosting Gitlab on a Linux Server",
+    [
+      "Set up a firewall, and partitioned disk storage for increased security",
+      "Installed intrusion detection systems, and system monitoring while performing nregular security audits",
+      " Set up user accounts and assigned permissions according to a need-to-know basis",
+    ],
+    ],
 };
 
 export const skills = [

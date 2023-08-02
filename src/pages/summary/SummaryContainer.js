@@ -1,4 +1,4 @@
-import profilePicture from "../../pictures/pineapple_2060146.png";
+import profilePicture from "../../pictures/pineapple.png";
 import Summary from "./Summary";
 import { summary } from "../../constants/Constants";
 import "./SummaryContainer.css";

@@ -9,6 +9,7 @@ import "./App.css";
 const router = createBrowserRouter([
   { path: "/", element: <HomePage />, errorElement: <ErrorPage /> },
   { path: "/projectDescription", element: <ProjectDescription /> },
+  { path: "/external-linkedin", element: <ProjectDescription /> },
 ]);
 
 function App() {

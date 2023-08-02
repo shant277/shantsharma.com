@@ -1,11 +1,14 @@
 import { Link } from "react-router-dom";
 
+import "./projectDescription.css"
+
 function ProjectDescription() {
   return (
     <div>
-      <h1>More detailed project description here</h1>
-      <p>Hello World!!!!</p>
+    <div className="project-description"> </div>
+      <h1>More detailed project descriptions will eventually go here</h1>
       <Link to="/">Back to home</Link>
+   
     </div>
   );
 }

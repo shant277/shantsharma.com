@@ -50,7 +50,7 @@ export const projects = {
       "Installed intrusion detection systems, and system monitoring while performing nregular security audits",
       " Set up user accounts and assigned permissions according to a need-to-know basis",
     ],
-    ],
+  ],
 };
 
 export const skills = [
@@ -71,3 +71,10 @@ export const skills = [
   "Amazon firebase",
   "VsCode",
 ];
+
+export const links = {
+  Kindacode: "https://www.kindacode.com",
+  LinkedIn: "https://www.linkedin.com/in/shant-sharma-651178255",
+  Github: "https://github.com/shant277",
+  Email: "www.shantsharma.com"
+};

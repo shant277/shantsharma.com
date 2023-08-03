@@ -73,8 +73,7 @@ export const skills = [
 ];
 
 export const links = {
-  Kindacode: "https://www.kindacode.com",
+  Email: "www.shantsharma.com",
   LinkedIn: "https://www.linkedin.com/in/shant-sharma-651178255",
   Github: "https://github.com/shant277",
-  Email: "www.shantsharma.com"
 };

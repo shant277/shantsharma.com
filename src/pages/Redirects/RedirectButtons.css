@@ -1,0 +1,12 @@
+.link-button {
+    margin-left: 2em;
+    border: 2px solid black;
+    font-size: large;
+}
+
+.link-button:hover {
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.4);
+    border: 2px solid black;
+    opacity: 0.9;
+    transform: translateY(-4px);
+}

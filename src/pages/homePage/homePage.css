@@ -29,8 +29,8 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: whitesmoke;
-    background-image: url("../../pictures/watercolor-bg.jpg");
+    background-color: rgb(46, 45, 45);
+    /* background-image: url("../../pictures/watercolor-bg.jpg"); */
     background-size: cover;
   }
   .wrapper-container {

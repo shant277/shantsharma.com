@@ -7,12 +7,11 @@ import TopButton from "../../components/TopButton/TopButton.js";
 import Education from "../Education/Education.js";
 import TimeLineProject from "../projects/timeLineProject.js";
 import { Link } from "react-router-dom";
-import RedirectPage from "../Redirects/RedirectButtons.js";
+import RedirectButtons from "../Redirects/RedirectButtons.js";
 
 import "./homePage.css";
 
 function HomePage() {
-    // Redirect Page
 
   return (
     <div className="App" >
@@ -24,7 +23,7 @@ function HomePage() {
         <h2 class="job-title">Software Developer</h2>
       </div>
        
-      <RedirectPage urls= {links}/>
+      <RedirectButtons urls= {links}/>
       <SummaryContainer />
 
       <div className="wrapper-container">

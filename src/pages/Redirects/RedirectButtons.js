@@ -11,7 +11,7 @@ function RedirectPage(props) {
   };
 
   return (
-    <div>
+    <div className="link-wrapper">
        {genButtons()}
     </div>
   );

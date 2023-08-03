@@ -1,7 +1,10 @@
 .link-button {
     margin-left: 2em;
     border: 2px solid black;
+    border-radius: 50px;
     font-size: large;
+    color: rgb(219, 219, 219);
+    background-color: gray;
 }
 
 .link-button:hover {

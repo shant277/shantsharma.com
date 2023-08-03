@@ -1,5 +1,5 @@
 .navbar {
-  background-color: #f2f2f2;
+
   padding: 10px;
   border-radius: 25px;
   border: 2px solid #151613;
@@ -23,7 +23,7 @@
 }
 
 .navbar_item:hover {
-  background-color: #3f3a3a;
+  background-color: gray;
   transform: translateY(-8px);
   transition: transform 0.75s;
   box-shadow: 0 2px 30px rgba(39, 32, 39, 0.4);

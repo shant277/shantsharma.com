@@ -27,9 +27,5 @@
   transform: translateY(-8px);
   transition: transform 0.75s;
   box-shadow: 0 2px 30px rgba(39, 32, 39, 0.4);
-  color: white;
 }
 
-.white-text {
-  color: white;
-}

@@ -7,11 +7,8 @@ import TopButton from "../../components/TopButton/TopButton.js";
 import Education from "../Education/Education.js";
 import TimeLineProject from "../projects/timeLineProject.js";
 import { Link } from "react-router-dom";
-import RedirectPage from "../Redirects/LinkedIn.js";
+import RedirectPage from "../Redirects/RedirectButtons.js";
 
-
-
-import "../../App.css";
 import "./homePage.css";
 
 function HomePage() {
@@ -27,10 +24,7 @@ function HomePage() {
         <h2 class="job-title">Software Developer</h2>
       </div>
        
-        <RedirectPage urls= {links}/>
-
-      <div>Email LinkedIn Github</div>
-
+      <RedirectPage urls= {links}/>
       <SummaryContainer />
 
       <div className="wrapper-container">
@@ -42,8 +36,6 @@ function HomePage() {
         </div>
         <Education />
       </div>
-      
- 
       <Skills skills={skills}></Skills>
       {/* Contact me section will have connection to a database one day */}
       <div>

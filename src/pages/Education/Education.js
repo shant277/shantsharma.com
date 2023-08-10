@@ -9,9 +9,10 @@ function Education() {
       <ul class="timeline-items">
         <li class="timeline-item">
         <h3>Macewan University</h3>
-        <h4>Bachelor of Science</h4>
-        <ul>2017 - 2022</ul>
-        <ul class="content">Major in Computer Science, minor in History</ul>
+        <h4>Bachelor of Science, 2017 - 2022</h4>
+        <p>Majored in Computer Science with a focus on Systems Information & Security, minored in History</p>
+        <p></p>
+
         </li>
       </ul>
       </section>

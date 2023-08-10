@@ -1,3 +1,6 @@
+.timeline-item ul {
+    text-align: left;
+}
 .timeline-title {
     font-size: 3em;
     font-weight: bold;
@@ -37,7 +40,7 @@
   }
   
   .timeline-items {
-    margin: 2em;
+    margin: 1em;
     padding: 0.01em 0 3em 2em;
     border-left: 1px solid black;
   }

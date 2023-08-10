@@ -1,15 +1,22 @@
 .link-button {
-    margin-left: 2em;
-    border: 2px solid black;
-    border-radius: 50px;
-    font-size: large;
-    color: rgb(219, 219, 219);
-    background-color: gray;
+  display: inline-flex;
+  height: 40px;
+  width: 175px;
+  border: 2px solid #bfc0c0;
+  border-radius: 50px;
+  margin: 20px 20px 20px 20px;
+  color: #bfc0c0;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: rgb(46, 45, 45);;
 }
 
 .link-button:hover {
-    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.4);
-    border: 2px solid black;
-    opacity: 0.9;
-    transform: translateY(-4px);
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.4);
+  border: 2px solid black;
+  opacity: 0.9;
+  transform: translateY(-4px);
 }

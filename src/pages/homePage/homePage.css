@@ -3,6 +3,17 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
+  position: relative;
+}
+
+.wrapper-container::before {
+    content: ''; /* Empty content */
+    position: absolute;
+    top: -100;
+    left: -100;
+    width: 100%; /* Full width of the container */
+    height: 1px;
+    background-color: #BFC0C0;
 }
 
 .name {
@@ -11,10 +22,6 @@
 
 .job-title{ 
     font-size: 1.5em;
-}
-
-.project-link {
-    text-align: left;
 }
 
 #top, #bottom {
@@ -33,9 +40,7 @@
     /* background-image: url("../../pictures/watercolor-bg.jpg"); */
     background-size: cover;
   }
-  .wrapper-container {
-    justify-content: left;
-  }
+
   .info-card {
     justify-content: center;
     text-align: left;
@@ -56,19 +61,6 @@
     display: inline-block;
   }
   
-  .App-link {
-    color: #61dafb;
-  }
-  
-  @keyframes App-logo-spin {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-  
   .education-container {
     padding: 20px 16px;
     justify-content: center;
@@ -79,11 +71,75 @@
     text-align: left;
   }
   
+
   .skills-container {
-    justify-content: center;
+    border-top: 1px solid #BFC0C0;
   }
   
-  .skills-container h2 {
+  .skills-title {
+    font-size: 3em;
     text-align: left;
+    margin-left: 1em;
+    
   }
+
+  /* Fifth Button */
+
+#project-link {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  #project-link a {
+    position: relative;
+    transition: all .45s ease-Out;
+  }
+  
+  #translate {
+    transform: rotate(50deg);
+    width: 100%;
+    height: 250%;
+    left: -200px;
+    top: -30px;
+    background: #BFC0C0;
+    position: absolute;
+    transition: all .3s ease-Out;
+  }
+  
+  #project-link:hover #translate {
+    left: 0;
+  }
+  
+  #project-link:hover a {
+    color: #2D3142;
+  }
+
+  /* Button Styles */
+
+.project-button {
+    display: inline-flex;
+    height: 40px;
+    width: 175px;
+    border: 2px solid #BFC0C0;
+    border-radius: 50px;
+    margin: 20px 20px 20px 20px;
+    color: #BFC0C0;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: .8em;
+    letter-spacing: 1.5px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  a {
+    color: #BFC0C0;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }
+
+
+  
   

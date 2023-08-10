@@ -1,7 +1,8 @@
-import { projects, skills, links } from "../../constants/Constants.js";
+import { projects, languages, links, technologies } from "../../constants/Constants.js";
 import { Header } from "../../components/navbar/headerNavBar.js";
 import SummaryContainer from "../summary/SummaryContainer.js";
-import Skills from "../skills/skills.js";
+import Languages from "../skills/Languages.js";
+import Technologies from "../skills/Technologies.js";
 import TopNavbar from "../../components/navbar/TopNavbar.js";
 import TopButton from "../../components/TopButton/TopButton.js";
 import Education from "../Education/Education.js";
@@ -12,9 +13,8 @@ import RedirectButtons from "../Redirects/RedirectButtons.js";
 import "./homePage.css";
 
 function HomePage() {
-
   return (
-    <div className="App" >
+    <div className="App">
       <TopNavbar />
       <Header />
 
@@ -22,20 +22,29 @@ function HomePage() {
         <h1 class="name">Shant Sharma</h1>
         <h2 class="job-title">Software Developer</h2>
       </div>
-       
-      <RedirectButtons urls= {links}/>
+
+      <RedirectButtons urls={links} />
       <SummaryContainer />
 
+    
       <div className="wrapper-container">
         <div className="inner-wrapper">
           <div class="timelines" id="projects">
             <TimeLineProject projects={projects}></TimeLineProject>
           </div>
-          <Link to="/projectDescription" className="project-link">Detailed project Descriptions</Link>
+          <Link to="/projectDescription" className="project-button" id="project-link">
+          <div id="translate"></div>
+              <a href="/">Detailed project descriptions</a>
+          </Link>
         </div>
         <Education />
       </div>
-      <Skills skills={skills}></Skills>
+      <div className="skills-container">
+        <h3 className="skills-title">Skills</h3>
+      <Languages Languages={languages}></Languages>
+      <Technologies Technologies={technologies}></Technologies>
+      </div>
+
       {/* Contact me section will have connection to a database one day */}
       <div>
         <section id="contact">
@@ -59,12 +68,16 @@ function HomePage() {
       </div>
       <footer>
         <p>&copy; 2023 Shant Sharma. All rights reserved.</p>
-        <a href="https://www.freepik.com/free-vector/watercolor-sky-with-stars-background_9216892.htm#query=abstract%20constellations%20in%20sky%20background&position=44&from_view=search&track=ais">Background Image by Vectonauta</a> on Freepik
-
+        <a
+          href="https://www.freepik.com/icon/pineapple_2060146#fromView=search&term=pineapple&page=1&position=14"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Icon by Freepik
+        </a>
       </footer>
       <TopButton />
-      </div>
-  
+    </div>
   );
 }
 export default HomePage;

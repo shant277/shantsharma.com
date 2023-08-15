@@ -18,11 +18,8 @@ function TimeLineProject(props) {
   }));
 
   return (
-    <section class="timeline education">
-      <h2 class="timeline-title" id="education">
-        Projects
-      </h2>
    
+    <section class="timeline education">
       <ul class="timeline-items">
         {projectArray.map((project, index) => (
           <li class="timeline-item" key={index}>
@@ -36,9 +33,9 @@ function TimeLineProject(props) {
           </li>
         ))}
       </ul>
-      
-
     </section>
+  
+  
   );
 }
 

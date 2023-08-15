@@ -1,3 +1,7 @@
+.app-wrapper-container {
+    display: flex;
+}
+
 .wrapper-container {
   display: flex;
   flex-wrap: wrap;
@@ -36,11 +40,9 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(46, 45, 45);
-    /* background-image: url("../../pictures/watercolor-bg.jpg"); */
     background-size: cover;
-  }
 
+  }
   .info-card {
     justify-content: center;
     text-align: left;
@@ -61,84 +63,6 @@
     display: inline-block;
   }
   
-  .education-container {
-    padding: 20px 16px;
-    justify-content: center;
-    text-align: left;
-    
-  }
-  .education-container li {
-    text-align: left;
-  }
-  
-
-  .skills-container {
-    border-top: 1px solid #BFC0C0;
-  }
-  
-  .skills-title {
-    font-size: 3em;
-    text-align: left;
-    margin-left: 1em;
-    
-  }
-
-  /* Fifth Button */
-
-#project-link {
-    position: relative;
-    overflow: hidden;
-    cursor: pointer;
-  }
-  
-  #project-link a {
-    position: relative;
-    transition: all .45s ease-Out;
-  }
-  
-  #translate {
-    transform: rotate(50deg);
-    width: 100%;
-    height: 250%;
-    left: -200px;
-    top: -30px;
-    background: #BFC0C0;
-    position: absolute;
-    transition: all .3s ease-Out;
-  }
-  
-  #project-link:hover #translate {
-    left: 0;
-  }
-  
-  #project-link:hover a {
-    color: #2D3142;
-  }
-
-  /* Button Styles */
-
-.project-button {
-    display: inline-flex;
-    height: 40px;
-    width: 175px;
-    border: 2px solid #BFC0C0;
-    border-radius: 50px;
-    margin: 20px 20px 20px 20px;
-    color: #BFC0C0;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-size: .8em;
-    letter-spacing: 1.5px;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
-  }
-  
-  a {
-    color: #BFC0C0;
-    text-decoration: none;
-    letter-spacing: 1px;
-  }
 
 
   

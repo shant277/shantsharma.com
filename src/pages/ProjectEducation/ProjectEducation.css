@@ -1,0 +1,77 @@
+.wrapper-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: relative;
+}
+
+.wrapper-container::before {
+  content: ""; /* Empty content */
+  position: absolute;
+  top: -100;
+  left: -100;
+  width: 100%; /* Full width of the container */
+  height: 1px;
+  background-color: #bfc0c0;
+}
+
+#project-link {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+#project-link a {
+  position: relative;
+  transition: all 0.45s ease-Out;
+}
+
+#translate {
+  transform: rotate(50deg);
+  width: 100%;
+  height: 250%;
+  left: -200px;
+  top: -30px;
+  background: #bfc0c0;
+  position: absolute;
+  transition: all 0.3s ease-Out;
+}
+
+#project-link:hover #translate {
+  left: 0;
+}
+
+#project-link:hover a {
+  color: #2d3142;
+}
+
+/* Button Styles */
+
+.project-button {
+  display: inline-flex;
+  height: 40px;
+  width: 175px;
+  border: 2px solid #bfc0c0;
+  border-radius: 50px;
+  margin: 20px 20px 20px 20px;
+  color: #bfc0c0;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 0.8em;
+  letter-spacing: 1.5px;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.project-button-wrapper {
+  justify-content: center;
+  text-align: center;
+}
+
+.timeline-title {
+  font-size: 3em;
+  text-align: left;
+  margin-left: 1em;
+}

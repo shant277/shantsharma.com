@@ -4,7 +4,6 @@ function Education() {
   return (
 
     <div id="education">
-      <h1 className="timeline-title">Education</h1>
       <section class="timeline education">
       <ul class="timeline-items">
         <li class="timeline-item">

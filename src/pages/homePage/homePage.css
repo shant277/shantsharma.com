@@ -1,54 +1,32 @@
-
-.wrapper-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-  position: relative;
-}
-
-.wrapper-container::before {
-    content: ''; /* Empty content */
-    position: absolute;
-    top: -100;
-    left: -100;
-    width: 100%; /* Full width of the container */
-    height: 1px;
-    background-color: #BFC0C0;
-}
-
-.name {
-    font-size: 3em;
-}
-
-.job-title{ 
-    font-size: 1.5em;
-}
-
-.App {
-    text-align: center;
+.app-inner-wrapper {
+    text-align: left;
     justify-content: left;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 
-  }
-  .info-card {
-    justify-content: center;
+}
+.title-wrapper {
+    border-bottom: 1px solid #bfc0c0;
+}
+.title {
     text-align: left;
-  }
-  
-  @media (prefers-reduced-motion: no-preference) {
-    .App-logo {
-      animation: App-logo-spin infinite 20s linear;
-    }
-  }
-  
-  .title h1 h4 {
-    display: inline-block;
-  }
-  
+    margin-left: 1em;  
+}
+.name {
+  font-size: 3em;
+   
+}
+.job-title {
+    font-size: 1.5em;
+}
+.footer {
+    margin-top: 30%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
 
 
   

@@ -1,12 +1,11 @@
-.skills-container {
-    border-top: 1px solid #BFC0C0;
+.skills-title-container {
+    border-bottom: 1px solid #BFC0C0;
   }
-  
+
   .skills-title {
     font-size: 3em;
     text-align: left;
     margin-left: 1em;
-    
   }
 
   a {

@@ -26,11 +26,6 @@ function Sidebar() {
             <Link to="/Skills" className="sidebar-button" id="sidebar-link">
               <a href="/">Skills & Technologies</a>
             </Link>
-            <li className="sidebar-item">
-              <Link to="/Test" className="sidebar-button" id="sidebar-link">
-                <a href="/">Test</a>
-              </Link>
-            </li>
           </li>
         </ul>
       </div>

@@ -21,10 +21,13 @@ function Skills() {
       variants={pageVariants}
       transition={pageTransition}
     >
-      <h3 className="skills-title">Skills</h3>
+      <div className="skills-title-container">
+        <h3 className="skills-title">Skills</h3>
+      </div>
       <Languages Languages={languages}></Languages>
       <Technologies Technologies={technologies}></Technologies>
-    </motion.div>
+    
+    </motion.div>  
   );
 }
 

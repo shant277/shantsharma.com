@@ -1,6 +1,3 @@
-.app-wrapper-container {
-    display: flex;
-}
 
 .wrapper-container {
   display: flex;
@@ -28,29 +25,18 @@
     font-size: 1.5em;
 }
 
-#top, #bottom {
-    flex: 1;
-    background-size: cover;
-    background-position: center;
-}
-
 .App {
     text-align: center;
     justify-content: left;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-size: cover;
+    width: 100%;
 
   }
   .info-card {
     justify-content: center;
     text-align: left;
-  }
-  
-  .App-logo {
-    height: 40vmin;
-    pointer-events: none;
   }
   
   @media (prefers-reduced-motion: no-preference) {

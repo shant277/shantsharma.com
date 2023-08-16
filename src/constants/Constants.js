@@ -101,14 +101,14 @@ export const pageVariants = {
     out: {
       opacity: 0,
       x: "100vw",
-      scale: 1.2
+      scale: 0.5
     }
   };
   
   export const pageTransition = {
     type: "tween",
     ease: "anticipate",
-    duration: 1.0
+    duration: 0.7
   };
   
   export const pageStyle = {

@@ -1,6 +1,8 @@
 .app-wrapper-container {
     background-color: rgb(46, 45, 45);
     background-size: cover;
-    height: 150vh;
+    height: 125vh;
+    width: 125vw;
     display: flex;
+    overflow-x: hidden;
   }

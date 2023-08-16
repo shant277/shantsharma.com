@@ -1,5 +1,7 @@
 .sidebar-container {
     border-right: 1px solid rgb(219, 219, 219);
+    z-index: 1000;
+    background-color: rgb(22, 21, 21);
 }
 
 .sidebar-item {
@@ -11,7 +13,7 @@
         display: inline-flex;
         height: 40px;
         width: 175px;
-        border: 2px solid #bfc0c0;
+    
         border-radius: 50px;
         margin: 20px 20px 20px 20px;
         color: #bfc0c0;

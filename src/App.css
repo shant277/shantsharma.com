@@ -2,4 +2,5 @@ body {
     font-family: 'Ubuntu';
     font-weight:700;
     color: rgb(219, 219, 219);
+    overflow-x: hidden;
 }

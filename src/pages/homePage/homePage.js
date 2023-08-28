@@ -26,9 +26,10 @@ function HomePage() {
           <h1 className="name">Shant Sharma</h1>
           <h2 className="job-title">Software Developer</h2>
         </div>
-      </div>
+          </div>
+         
        <div className="app-inner-wrapper">
-      <RedirectButtons urls={links} />
+       <RedirectButtons urls={links} />
       <SummaryContainer />
       </div>
       {/* Contact me section will have connection to a database one day */}

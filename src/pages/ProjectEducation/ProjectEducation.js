@@ -3,19 +3,25 @@ import Education from "./Education/Education";
 import { projects } from "../../constants/Constants";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import { pageVariants, pageTransition, pageStyle } from "../../constants/Constants.js";
+import {
+  pageVariants,
+  pageTransition,
+  pageStyle,
+} from "../../constants/Constants.js";
 
 import "./ProjectEducation.css";
 
 function ProjectEducation() {
   return (
     <motion.div
-    style={pageStyle}
-    initial="initial"
-    animate="in"
-    exit="out"
-    variants={pageVariants}
-    transition={pageTransition}>
+      className="project-education-container"
+      style={pageStyle}
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
       <h2 className="timeline-title" id="project-title">
         Projects
       </h2>

@@ -18,7 +18,6 @@ function TimeLineProject(props) {
   }));
 
   return (
-   
     <section class="timeline education">
       <ul class="timeline-items">
         {projectArray.map((project, index) => (
@@ -34,8 +33,6 @@ function TimeLineProject(props) {
         ))}
       </ul>
     </section>
-  
-  
   );
 }
 

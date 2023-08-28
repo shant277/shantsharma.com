@@ -1,5 +1,40 @@
-.project-description {
-    background-image: url("../../../pictures/under-construction.jpg");
-    background-size: cover;  
-    height: 50vh;  
+.project-demos{
+/*     background-image: url("../../../pictures/under-construction.jpg");
+     background-size: cover;  */
+     justify-content: left;
+    background-color: rgb(46, 45, 45);
+
 }
+
+.demo-header {
+    margin-left: 2em;
+}
+
+
+.video-container-wrapper {
+
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 3em;
+}
+
+.video-container {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .video-player {
+    width: 100%;
+    height: auto;
+  }
+
+  .back-button {
+    margin: 2em;
+  }
+  

@@ -3,6 +3,7 @@
      background-size: cover;  */
      justify-content: left;
     background-color: rgb(46, 45, 45);
+    height: 150VH;
 
 }
 
@@ -24,9 +25,13 @@
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
-    border-radius: 12px;
     overflow: hidden;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .project-video {
+    position: relative;
+    width: 100%;
+    border-radius: 12px;
   }
   
   .video-player {

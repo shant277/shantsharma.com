@@ -9,25 +9,21 @@ function ProjectDescription() {
       <div className="video-container-wrapper">
         <div className="video-container">
           <h1> Rudimentary IoT Health Monitoring System</h1>
-          <video controls className="video-player">
-            <source
-              src="https://youtu.be/h1rZbg2Dc6M"
-              type="video/mp4"
-            />
-          </video>
-        </div>
-        <div className="video-container">
-          <h1> Video 2 Here</h1>
-          <video controls className="video-player">
-            <source
-              src="https://youtu.be/h1rZbg2Dc6M"
-              type="video/mp4"
-            />
-          </video>
+          <iframe
+            className="project-video"
+            width="853"
+            height="480"
+            src={`https://www.youtube.com/embed/h1rZbg2Dc6M`}
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+            title="Embedded capstone vide"
+          />
         </div>
       </div>
 
-      <Link className="back-button" to="/ProjectEducation">Back to home</Link>
+      <Link className="back-button" to="/ProjectEducation">
+        Back to home
+      </Link>
     </div>
   );
 }

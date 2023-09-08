@@ -65,6 +65,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  position: relative;
 }
 
 .project-button-wrapper {
@@ -76,4 +77,21 @@
   font-size: 3em;
   text-align: left;
   margin-left: 1em;
+}
+
+.tooltip {
+    position: absolute;
+    top: 60%;
+    left: 40%;
+    transform: translateX(-50%);
+    color: #bfc0c0;
+
+    border: 2px solid #bfc0c0;
+    padding: 5px 10px; /* Adjust padding as needed */
+    border-radius: 5px;
+    font-size: 14px;
+    display: none;
+}
+.project-button:hover + .tooltip {
+    display: block;
 }

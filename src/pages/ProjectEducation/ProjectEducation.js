@@ -10,8 +10,19 @@ import {
 } from "../../constants/Constants.js";
 
 import "./ProjectEducation.css";
+import { useState} from "react";
 
 function ProjectEducation() {
+  const [showTooltip, setShowTooltip] = useState(false);
+ 
+  const handleMouseEnter = () => {
+      setShowTooltip(true);
+  };
+
+  const handleMouseLeave = () => {
+    setShowTooltip(false);
+  };
+
   return (
     <motion.div
       className="project-education-container"
@@ -35,10 +46,13 @@ function ProjectEducation() {
               to="/projectDescription"
               className="project-button"
               id="project-link"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
             >
               <div id="translate"></div>
               <a href="/">Detailed project descriptions</a>
             </Link>
+            {showTooltip && <div className="tooltip">This button leads to project demos/showcases. This is still a work in progress, but feel free to check it out as I begin to fill this page with projects!</div>}
           </div>
           <h1 className="timeline-title">Education</h1>
         </div>

@@ -11,8 +11,8 @@ import { AnimatePresence } from "framer-motion";
 import Loading from "./components/Loading/Loading";
 import { useState, useEffect } from "react";
 
-import "./App.css";
-
+ import "./App.css";
+ 
 //https:shantsharma.com/
 /* const router = createBrowserRouter([
   {
@@ -50,7 +50,7 @@ function RedirectComponent() {
   const location = useLocation();
 
   return (
-    <div>
+      <div className="outer-app-wrapper">
       {isLoading ? (
         <Loading /> // Show loading screen while content is loading
       ) : (

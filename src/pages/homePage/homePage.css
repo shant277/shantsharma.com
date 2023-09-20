@@ -1,41 +1,49 @@
-
 .app-inner-wrapper {
-    text-align: left;
-    justify-content: left;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-
+  text-align: left;
+  justify-content: left;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 .app-inner-wrapper::before {
-    content: ""; /* Empty content */
-    position: absolute;
-    top: -100;
-    left: -100;
-    width: 150%; /* Full width of the container */
-    height: 1px;
-    background-color: #bfc0c0;
-  }
-  
-.title {
-    text-align: left;
-    margin-left: 1em;  
+  content: ""; 
+  position: absolute;
+  top: -100;
+  left: -100;
+  width: 150%; 
+  height: 1px;
+  background-color: #bfc0c0;
 }
+
+.title {
+  text-align: center;
+  margin-left: 1em;
+}
+
 .name {
   font-size: 3em;
-   
+  color: white;
+  opacity: 0.5; 
+  transition: opacity 0.3s ease-in-out; 
+}
+.name:hover {
+    opacity: 1.0;
 }
 .job-title {
-    font-size: 1.5em;
+  font-size: 1.5em;
 }
 .footer {
-    margin-top: 30%;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+  margin-top: 30%;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
-
-
+.company-link {
+    transition: color 0.3s, text-decoration 0.3s; 
+  }
   
+  .company-link:hover {
+    text-decoration: underline; 
+  }
   

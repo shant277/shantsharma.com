@@ -21,38 +21,35 @@ function HomePage() {
       variants={pageVariants}
       transition={pageTransition}
     >
-      <div className="title-wrapper">
+      <div className="title-wrapper" style={{ textAlign: "center" }}>
         <div className="title">
-          <h1 className="name">Shant Sharma</h1>
-          <h2 className="job-title">Software Developer</h2>
+          <h1 style={{ fontSize: "2em", paddingTop: "5rem" }}>
+            {" "}
+            Hi, my name is
+          </h1>
+          <h1 className="name">Shant Sharma.</h1>
+          <h1 style={{ paddingBottom: "4rem" }}>I wanna build things.</h1>
+          <p style={{ textAlign: "center", lineHeight: "1.5" }}>
+            I am a recent Computer Science graduate from Macewan University, and
+            an (aspiring) Software Developer looking to get into the industry. I
+            am currently located in Edmonton, Alberta, Canada working for{" "}
+            <a
+              className="company-link"
+              href="https://www.imperiallegacy.ca/"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "teal" }}
+            >
+              Imperial Legacy Inc.
+            </a>
+          </p>
         </div>
-          </div>
-         
-       <div className="app-inner-wrapper">
-       <RedirectButtons urls={links} />
-      <SummaryContainer />
       </div>
-      {/* Contact me section will have connection to a database one day */}
-      {/*   <div>
-          <section id="contact">
-            <h2>Contact Me</h2>
-            <form>
-              <label>
-                Name:
-                <input type="text" name="name" />
-              </label>
-              <label>
-                Email:
-                <input type="email" name="email" />
-              </label>
-              <label>
-                Message:
-                <textarea name="message"></textarea>
-              </label>
-              <button type="submit">Send</button>
-            </form>
-          </section>
-        </div> */}
+
+      <div className="app-inner-wrapper">
+        <RedirectButtons urls={links} />
+        <SummaryContainer />
+      </div>
       <footer className="footer">
         <p>&copy; 2023 Shant Sharma. All rights reserved.</p>
         <a
@@ -63,7 +60,6 @@ function HomePage() {
           Icon by Freepik
         </a>
       </footer>
-      
     </motion.div>
   );
 }

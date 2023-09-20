@@ -5,7 +5,9 @@ function BulletPoints(props) {
     <p>
       {/* Print out contents of string array as list objects*/}
       {props.content.map((line) => (
-        <li className="info-card">{line}</li>
+        <p style={{ lineHeight: "1.5" }} className="info-card">
+          {line}
+        </p>
       ))}
     </p>
   );

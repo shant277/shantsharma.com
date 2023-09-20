@@ -1,10 +1,9 @@
 //summary page descriptions
 export const summary = [
-  "Welcome to my website! Here's some info about me: ",
-  "I am a recent Computer Science graduate from Macewan University looking to get into the industry",
-  "My Coursework mainly covered C and Python programming, embedded systems, networking, and systems information and security. ",
-    " My main areas of expertise are Python, C and I am learning React as well as Javascript, CSS, and HTML. ",
-  "I enjoy playing basketball and videogames and am trying to get into hiking when I have time."
+  'Hello and welcome to my website! My name is Shant. My tech journey started in 2017 when I began university. At the time, I was still searching for my academic path. One day, my girlfriend suggested, "Have you considered Computer Science?" Her question ignited a spark of curiosity, and I decided to explore this unfamiliar territory. Little did I know that her simple suggestion would lead me on a transformative journey into the world of coding and problem - solving, shaping my future and passion for technology.',
+  "5 years later here I am, Thanks Daphny! ",
+  "On to academics, my Coursework mainly covered C, Python programming, embedded systems, networking, and systems information and security. My main areas of expertise are Python, C and I am learning React as well as Javascript, CSS, and HTML. ",
+  "In my free time, I enjoy playing and watching basketball (go Clippers!) and videogames.",
 ];
 
 // project page descriptions

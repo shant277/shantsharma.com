@@ -1,7 +1,7 @@
 import { links } from "../../constants/Constants.js";
 import SummaryContainer from "../summary/SummaryContainer.js";
-import TopButton from "../../components/TopButton/TopButton.js";
-import RedirectButtons from "../Redirects/RedirectButtons.js";
+/* import TopButton from "../../components/TopButton/TopButton.js"; */
+import RedirectButtons from "../../components/Redirects/RedirectButtons.js";
 import { motion } from "framer-motion";
 import {
   pageVariants,
@@ -63,7 +63,7 @@ function HomePage() {
           Icon by Freepik
         </a>
       </footer>
-      <TopButton />
+      
     </motion.div>
   );
 }

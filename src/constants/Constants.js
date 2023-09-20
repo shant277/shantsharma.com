@@ -77,7 +77,7 @@ export const technologies = [
 ];
 
 export const links = {
-  Email: "www.shantsharma.com",
+  Email: "mailto:shant277@gmail.com",
   LinkedIn: "https://www.linkedin.com/in/shant-sharma-651178255",
   Github: "https://github.com/shant277",
 };

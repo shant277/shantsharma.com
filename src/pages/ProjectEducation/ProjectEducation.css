@@ -95,3 +95,10 @@
 .project-button:hover + .tooltip {
     display: block;
 }
+
+.timelines {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}

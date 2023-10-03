@@ -14,7 +14,8 @@ export const projects = {
       "I hosted this website on AWS lightsail using a virtual Ubuntu instance that has NGINX installed.",
       "Domain and certificates configured using AWS route 53 and Lightsail console. Website itself ",
       "is made in React, which is composed of Javascript, HTML, and CSS. ",
-    ],
+        ],
+    ["../../../pictures/pineapple.png"],
   ],
   project1: [
     "Rudimentary IoT Health Monitoring System",
@@ -22,7 +23,9 @@ export const projects = {
       "Connected several sensors to an Arduino microcontroller. Wrote a driver to allow interaction between sensors ",
       "and the microcontroller. Microcontoller then uploaded the sensor information to the IoT cloud platform Thingspeak",
       "Then developed an Android application using Flutter/Dart to display information from cloud platform and store user information",
-    ],
+      ],
+      ["../pictures/pineapple.png"],
+
   ],
   project2: [
     "Syllabi Search Program",
@@ -30,7 +33,9 @@ export const projects = {
       "Matched keywords in a chosen PDF document to a pre-determined key words list that then displayed results",
       "(i.e. graphs, tables, matched keywords) in a readable UI. Some functionality included: enabled users to save",
       "and load: previous results, settings that customized UI, able to view results in different grapg formats (bar, pie, histogram)",
-    ],
+      ],
+      ["../pictures/pineapple.png"],
+
   ],
   project3: [
     "Property Value Search Program",
@@ -38,7 +43,9 @@ export const projects = {
       "Allowed a user to search for specific property values in Edmonton with a given dataset. Some features included: ",
       "A built-in Google maps feature to allow visualization of property locations when searching for properties. ",
       "was able to search by address, and values. Designed the program specifically with scalability and extendibility for the future",
-    ],
+      ],
+      ["../pictures/pineapple.png"],
+
   ],
   project4: [
     "Hosting Gitlab on a Linux Server",
@@ -47,7 +54,9 @@ export const projects = {
       "and system monitoring while performing regular security audits. Set up user accounts and assigned permissions according to a need-to-know basis",
       "Performed automated tests using pentesting tools such as John the ripper, chkrootkit and Lynis, to check for system health and security",
       "Wrote user guides and security reports on system.",
-    ],
+      ],
+      ["../pictures/pineapple.png"],
+
   ],
 };
 

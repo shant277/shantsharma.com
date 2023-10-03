@@ -18,7 +18,8 @@ function ProjectDescription() {
             allowFullScreen
             title="Embedded capstone vide"
           />
-        </div>
+              </div>
+              <div>This is where project cards will go</div>
       </div>
 
       <Link className="back-button" to="/ProjectEducation">

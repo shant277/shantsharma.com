@@ -10,19 +10,28 @@ import {
 } from "../../constants/Constants.js";
 
 import "./ProjectEducation.css";
-import { useState} from "react";
+import { useState } from "react";
+import ProjectCard from "../../components/Cards/HoverCard";
 
 function ProjectEducation() {
   const [showTooltip, setShowTooltip] = useState(false);
- 
+
   const handleMouseEnter = () => {
-      setShowTooltip(true);
+    setShowTooltip(true);
   };
 
   const handleMouseLeave = () => {
     setShowTooltip(false);
   };
 
+  const projectArray = Object.keys(projects).map((key) => ({
+    title: projects[key][0],
+      description: projects[key][1],
+    imageUrl: projects[key][2],
+  }));
+
+   /*  console.log(projectArray);
+    console.log(projectArray[1].title); */
   return (
     <motion.div
       className="project-education-container"
@@ -38,8 +47,14 @@ function ProjectEducation() {
       </h2>
       <div className="wrapper-container">
         <div className="inner-wrapper">
-          <div class="timelines" id="projects">
-            <TimeLineProject projects={projects}></TimeLineProject>
+          <div className="timelines" id="projects">
+{/*                       <TimeLineProject projects={projects}></TimeLineProject>
+ */}                      
+            {projectArray.map((project, index) => (
+                <ProjectCard data={project} index={index}>
+              </ProjectCard>
+            ))}
+                      
           </div>
           <div className="project-button-wrapper">
             <Link
@@ -52,7 +67,13 @@ function ProjectEducation() {
               <div id="translate"></div>
               <a href="/">Detailed project descriptions</a>
             </Link>
-            {showTooltip && <div className="tooltip">This button leads to project demos/showcases. This is still a work in progress, but feel free to check it out as I begin to fill this page with projects!</div>}
+            {showTooltip && (
+              <div className="tooltip">
+                This button leads to project demos/showcases. This is still a
+                work in progress, but feel free to check it out as I begin to
+                fill this page with projects!
+              </div>
+            )}
           </div>
           <h1 className="timeline-title">Education</h1>
         </div>

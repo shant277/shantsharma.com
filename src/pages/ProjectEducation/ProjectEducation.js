@@ -1,12 +1,11 @@
-import TimeLineProject from "./projects/timeLineProject";
 import Education from "./Education/Education";
-import { projects } from "../../constants/Constants";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
   pageVariants,
   pageTransition,
-  pageStyle,
+    pageStyle,
+    projects_,
 } from "../../constants/Constants.js";
 
 import "./ProjectEducation.css";
@@ -24,14 +23,6 @@ function ProjectEducation() {
     setShowTooltip(false);
   };
 
-  const projectArray = Object.keys(projects).map((key) => ({
-    title: projects[key][0],
-      description: projects[key][1],
-    imageUrl: projects[key][2],
-  }));
-
-   /*  console.log(projectArray);
-    console.log(projectArray[1].title); */
   return (
     <motion.div
       className="project-education-container"
@@ -47,10 +38,8 @@ function ProjectEducation() {
       </h2>
       <div className="wrapper-container">
         <div className="inner-wrapper">
-          <div className="timelines" id="projects">
-{/*                       <TimeLineProject projects={projects}></TimeLineProject>
- */}                      
-            {projectArray.map((project, index) => (
+          <div className="timelines" id="projects">                
+            {projects_.map((project, index) => (
                 <ProjectCard data={project} index={index}>
               </ProjectCard>
             ))}

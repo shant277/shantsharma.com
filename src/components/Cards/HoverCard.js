@@ -20,9 +20,7 @@ const ProjectCard = ({ data }) => {
   return (
     <>
       <ProjectSummary data={data} open={openModal} />
-      {/* Logic for rendering expanded view */}
       <AnimatePresence>
-       
         {open && (
           <Overlay close={closeModal}>
             {<Modal data={data} close={closeModal} />}

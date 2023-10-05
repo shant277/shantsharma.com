@@ -28,7 +28,7 @@ function HomePage() {
             Hi, my name is
           </h1>
           <h1 className="name">Shant Sharma.</h1>
-          <h1 style={{ paddingBottom: "4rem" }}>I wanna build things.</h1>
+          <h1 style={{ paddingBottom: "4rem" }}>I build things.</h1>
           <p style={{ textAlign: "center", lineHeight: "1.5" }}>
             I am a recent Computer Science graduate from Macewan University, and
             an (aspiring) Software Developer looking to get into the industry. I

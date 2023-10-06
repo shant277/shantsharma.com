@@ -1,3 +1,7 @@
+# This is my personal portfolio website 
+
+Come check it out [here](https://shantsharma.com/) 
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +72,9 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+### Useful: To create an empty branch, use these Git commands as found here: https://stackoverflow.com/questions/34100048/create-empty-branch-on-github.
+
+git switch --orphan <new branch>\
+git commit --allow-empty -m "Initial commit on orphan branch"\
+git push -u origin <new branch>

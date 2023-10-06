@@ -43,7 +43,7 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 ### Useful: To create an empty branch, use these Git commands as found here: https://stackoverflow.com/questions/34100048/create-empty-branch-on-github.
 
-git switch --orphan <new branch>
-git commit --allow-empty -m "Initial commit on orphan branch"
-git push -u origin <new branch>
+git switch --orphan <new branch> \
+git commit --allow-empty -m "Initial commit on orphan branch" \
+git push -u origin <new branch> \
 

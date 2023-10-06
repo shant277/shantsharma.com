@@ -1,6 +1,6 @@
 # This is my personal portfolio website 
 
-Come check it out [Here](https://shantsharma.com/) 
+Come check it out [here](https://shantsharma.com/) 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 

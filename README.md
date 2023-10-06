@@ -45,5 +45,5 @@ You don't have to ever use `eject`. The curated feature set is suitable for smal
 
 git switch --orphan <new branch>\
 git commit --allow-empty -m "Initial commit on orphan branch"\
-git push -u origin <new branch>\
+git push -u origin <new branch>
 

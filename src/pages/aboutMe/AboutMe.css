@@ -1,0 +1,16 @@
+p > .company-link {
+    padding: 5px;
+}
+
+p > .company-link:hover {
+    animation: spin 0.5s linear infinite;
+    text-decoration: underline;
+
+  }
+
+  .footer {
+    margin-top: 40%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  }

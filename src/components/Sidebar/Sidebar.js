@@ -11,7 +11,7 @@ const sideBarButtonVariants = {
   },
   tap: { scale: 0.9 },
 };
-
+/*  */
 function Sidebar() {
   return (
     <div className="sidebar-container">

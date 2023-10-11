@@ -1,45 +1,18 @@
-import React from "react";
-import Root from "./pages/homePage/root/root";
-import { Routes, Route, useLocation, useNavigate } from "react-router-dom";
-import HomePage from "./pages/homePage/homePage";
-import ProjectDescription from "./pages/ProjectEducation/projects/projectDescription";
-import ErrorPage from "./pages/Error";
-import Test from "./pages/test/test";
-import ProjectEducation from "./pages/ProjectEducation/ProjectEducation";
-import Skills from "./pages/Skills/Skills";
+import React, { useState, useEffect } from "react";
+import Root from "./pages/root/Root";
+import AboutMe from "./pages/aboutMe/AboutMe";
+import { Routes, Route, useLocation } from "react-router-dom";
+import ProjectEducation from "./pages/projectEducation/ProjectEducation";
 import { AnimatePresence } from "framer-motion";
-import Loading from "./components/Loading/Loading";
-import { useState, useEffect } from "react";
+import Loading from "./components/loading/Loading";
+import Skills from "./pages/skills/Skills";
 
- import "./App.css";
- 
-//https:shantsharma.com/
-/* const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Root />,
-    errorElement: <ErrorPage />,
-    children: [
-      { path: "/Test", element: <Test /> },
-      { path: "/HomePage", element: <HomePage />, index: true },
-      { path: "/ProjectEducation", element: <ProjectEducation /> },
-      { path: "/Skills", element: <Skills /> },
-    ],
-  },
-  { path: "/projectDescription", element: <ProjectDescription /> },
-]); */
+import "./App.css";
 
 function App() {
+  const location = useLocation();
   const [isLoading, setIsLoading] = useState(true);
-function RedirectComponent() {
-  const navigate = useNavigate();
 
-  // Redirect to the root route ("/")
-  navigate('/');
-  return null;
-}
-
-    
   // Simulate loading delay
   useEffect(() => {
     setTimeout(() => {
@@ -47,10 +20,8 @@ function RedirectComponent() {
     }, 3000); // Simulate a 3-second loading time
   }, []);
 
-  const location = useLocation();
-
   return (
-      <div className="outer-app-wrapper">
+    <div>
       {isLoading ? (
         <Loading /> // Show loading screen while content is loading
       ) : (
@@ -58,16 +29,14 @@ function RedirectComponent() {
           <Routes location={location} key={location.pathname}>
             {
               <Route path="/" element={<Root />}>
-                <Route index element={<HomePage />} />
+                <Route index element={<AboutMe />} />
                 <Route path="ProjectEducation" element={<ProjectEducation />} />
                 <Route path="Skills" element={<Skills />} />
                 <Route path="*" element={<Root />} />
               </Route>
             }
-            <Route
-              path="/projectDescription"
-              element={<ProjectDescription />}
-            />
+            {/*         <Route path="/projectDescription" element={<ProjectDescription />} />
+             */}
           </Routes>
         </AnimatePresence>
       )}

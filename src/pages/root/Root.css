@@ -1,0 +1,6 @@
+.app-wrapper-container {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+    display: flex;
+  }

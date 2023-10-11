@@ -13,15 +13,6 @@ import {
 import "./ProjectEducation.css";
 
 function ProjectEducation() {
-  /*   const [showTooltip, setShowTooltip] = useState(false);
-
-  const handleMouseEnter = () => {
-    setShowTooltip(true);
-  };
-
-  const handleMouseLeave = () => {
-    setShowTooltip(false);
-  }; */
 
   return (
     <motion.div

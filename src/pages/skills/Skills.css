@@ -1,0 +1,15 @@
+.skills-title-container {
+    border-bottom: 1px solid #BFC0C0;
+  }
+
+  .skills-title {
+    font-size: 3em;
+    text-align: left;
+    margin-left: 1em;
+  }
+
+  a {
+    color: #BFC0C0;
+    text-decoration: none;
+    letter-spacing: 1px;
+  }

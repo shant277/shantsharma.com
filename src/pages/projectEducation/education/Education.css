@@ -1,0 +1,66 @@
+.timeline-item ul {
+    text-align: left;
+}
+.timeline-title {
+    font-size: 3em;
+    font-weight: bold;
+    text-align: left;
+    margin-left: 1em;
+
+  }
+  
+  .timeline-item {
+    margin-bottom: 2em;
+    text-align: left;
+  }
+  .timeline-item h3 {
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    position: relative;
+  }
+
+  .timeline-item h4{
+    text-align: left;
+  }
+
+   /* This is responsible for getting that black dot on the line 
+   check this out for more info: https://www.w3schools.com/howto/howto_css_bullet_color.asp */
+  .timeline-item h3::before {
+    content: "";
+    position: absolute;
+    left: -2.35em;
+    background-color: rgb(219, 219, 219);
+    width: 0.7em;
+    height: 0.7em;
+    border-radius: 50%;
+    transform: translate(-0.5px, 0.2em);
+    color: black;
+  }
+  
+  .timeline-items {
+    margin: 1em;
+    padding: 0.01em 0 3em 2em;
+    border-left: 1px solid rgb(219, 219, 219);
+  }
+  
+  .timeline-item {
+    margin-top: -0.3em;
+    list-style: none;
+  }
+  .timeline-item time {
+    display: block;
+    float: left;
+    background-color: #ffebeb;
+    padding: 0.2em 0.4em;
+  }
+  .timeline-item > * {
+    margin: 1em 0;
+  }
+  .timeline-item .location {
+    clear: both;
+    font-size: 0.85em;
+    font-style: italic;
+  }
+

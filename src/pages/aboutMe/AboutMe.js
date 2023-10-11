@@ -1,12 +1,25 @@
 import React from "react";
 import { motion } from "framer-motion";
 import SummaryContainer from "./summaryContainer/SummaryContainer";
+import { links } from "../../constants/Constants";
+import {
+  pageVariants,
+  pageTransition,
+  pageStyle,
+} from "../../constants/Constants.js";
+import RedirectPage from "../../components/redirectButton/redirectButton";
 import "./AboutMe.css";
 
 function AboutMe() {
-
   return (
-    <div>
+    <motion.div
+      style={pageStyle}
+      initial="initial"
+      animate="in"
+      exit="out"
+      variants={pageVariants}
+      transition={pageTransition}
+    >
       <div className="title" style={{ textAlign: "center" }}>
         <h1 style={{ fontSize: "2rem", paddingTop: "5rem" }}>
           {" "}
@@ -22,20 +35,22 @@ function AboutMe() {
           I am a recent Computer Science graduate from Macewan University, and
           an (aspiring professional) Software Developer looking to get into the
           industry. I am currently located in Edmonton, Alberta, Canada and am
-          currently working for 
-                <a
-                className="company-link"
-                href="https://www.imperiallegacy.ca/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                 Imperial Legacy Inc.
-              </a>
+          currently working for
+          <a
+            className="company-link"
+            href="https://www.imperiallegacy.ca/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Imperial Legacy Inc.
+          </a>
         </p>
-          </div>
-          <motion.div>
-          <SummaryContainer />          </motion.div>
-          <footer className="footer">
+      </div>
+      <div className="inner-container">
+        <RedirectPage urls={links} />
+      </div>
+      <SummaryContainer />
+      <footer className="footer">
         <p>&copy; 2023 Shant Sharma. All rights reserved.</p>
         <a
           href="https://www.freepik.com/icon/pineapple_2060146#fromView=search&term=pineapple&page=1&position=14"
@@ -45,7 +60,7 @@ function AboutMe() {
           Icon by Freepik
         </a>
       </footer>
-    </div>
+    </motion.div>
   );
 }
 

@@ -7,6 +7,10 @@ p > .company-link:hover {
     text-decoration: underline;
 
   }
+.inner-container {
+   padding-left: 35%;
+   padding-right: 40%;
+}
 
   .footer {
     margin-top: 40%;

@@ -11,7 +11,8 @@ function Technologies(props) {
         {props.Technologies.map((line) => (
           <div className="skill-card">
             <ul>{line}</ul>
-          </div>
+            </div>
+            
         ))}
       </div>
     </div>

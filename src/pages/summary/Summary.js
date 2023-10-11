@@ -8,7 +8,7 @@ function Summary(props) {
   return (
     <div className="summary" id="summary">
       <section id="about">
-        <p>{intro}</p>
+        <p style={{lineHeight: '1.5'}}>{intro}</p>
         <BulletPoints content={summary}></BulletPoints>
       </section>
     </div>

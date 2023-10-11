@@ -18,15 +18,15 @@ function TimeLineProject(props) {
   }));
 
   return (
-    <section class="timeline education">
-      <ul class="timeline-items">
+    <section className="timeline education">
+      <ul className="timeline-items">
         {projectArray.map((project, index) => (
-          <li class="timeline-item" key={index}>
+          <li className="timeline-item" key={index}>
             <h3>{project.title}</h3>
             <p>
               {/* Print out contents of string array as list objects*/}
               {project.description.map((line) => (
-                <ul className="info-card">{line}</ul>
+                <li className="info-card">{line}</li>
               ))}
             </p>
           </li>

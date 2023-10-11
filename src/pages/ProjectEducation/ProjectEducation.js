@@ -1,22 +1,22 @@
-import TimeLineProject from "./projects/timeLineProject";
 import Education from "./Education/Education";
-import { projects } from "../../constants/Constants";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import {
   pageVariants,
   pageTransition,
-  pageStyle,
+    pageStyle,
+    projects_,
 } from "../../constants/Constants.js";
 
 import "./ProjectEducation.css";
-import { useState} from "react";
+import { useState } from "react";
+import ProjectCard from "../../components/Cards/HoverCard";
 
 function ProjectEducation() {
   const [showTooltip, setShowTooltip] = useState(false);
- 
+
   const handleMouseEnter = () => {
-      setShowTooltip(true);
+    setShowTooltip(true);
   };
 
   const handleMouseLeave = () => {
@@ -38,8 +38,12 @@ function ProjectEducation() {
       </h2>
       <div className="wrapper-container">
         <div className="inner-wrapper">
-          <div class="timelines" id="projects">
-            <TimeLineProject projects={projects}></TimeLineProject>
+          <div className="timelines" id="projects">                
+            {projects_.map((project, index) => (
+                <ProjectCard data={project} index={index}>
+              </ProjectCard>
+            ))}
+                      
           </div>
           <div className="project-button-wrapper">
             <Link
@@ -52,7 +56,13 @@ function ProjectEducation() {
               <div id="translate"></div>
               <a href="/">Detailed project descriptions</a>
             </Link>
-            {showTooltip && <div className="tooltip">This button leads to project demos/showcases. This is still a work in progress, but feel free to check it out as I begin to fill this page with projects!</div>}
+            {showTooltip && (
+              <div className="tooltip">
+                This button leads to project demos/showcases. This is still a
+                work in progress, but feel free to check it out as I begin to
+                fill this page with projects!
+              </div>
+            )}
           </div>
           <h1 className="timeline-title">Education</h1>
         </div>

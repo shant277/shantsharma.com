@@ -1,6 +1,7 @@
 import Github from "../../icons/github";
 import LinkedIn from "../../icons/github";
 import Email from "../../icons/github";
+
 import { motion } from "framer-motion";
 
 import "./redirectButton.css";

@@ -4,7 +4,6 @@ import FlipCard from "../../components/flipCard";
 import "./Languages.css";
 
 function Languages(props) {
-
   const skillVariants = {
     hover: {
       scale: 1.2,
@@ -21,14 +20,15 @@ function Languages(props) {
     <div>
       <h4 className="languages-title">Languages</h4>
       <div className="languages-container" id="skills">
-        {/*Print out contents of string array as list objects*/}
-        {props.Languages.map((line) => (
+        {props.Languages.map((language) => (
           <motion.div
             variants={skillVariants}
             whileHover="hover"
             whileTap="tap"
           >
-                <ul><FlipCard line={line} /></ul>
+            <ul>
+              <FlipCard name={language.language} icon={language.icon} />
+            </ul>
           </motion.div>
         ))}
       </div>

@@ -33,13 +33,9 @@
     text-decoration: none;
     color: rgb(219, 219, 219);
     position: relative;
-    transition: all 0.45s ease-Out;
+
   }
-  
-  #sidebar-link:hover #translate {
-    left: 0;
-  }
-  
+
   #sidebar-link:hover a {
     color: purple;
     text-decoration: underline;

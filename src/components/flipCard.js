@@ -27,9 +27,9 @@ function FlipCard(props) {
       onHoverEnd={handleHoverEnd} */
       >
           <div className="front">
-              {props.line}
+              {props.name}
           </div>
-          <div className="back"><IoLogoReact/></div>
+          <div className="back">{props.icon}</div>
     </motion.div>
   );
 }

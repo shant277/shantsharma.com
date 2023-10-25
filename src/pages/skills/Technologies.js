@@ -1,6 +1,5 @@
 import FlipCard from "../../components/flipCard";
 import { motion } from "framer-motion";
-
 import "./Technologies.css";
 
 function Technologies(props) {
@@ -23,14 +22,14 @@ function Technologies(props) {
         {/* 
        <BulletPoints content={props.skills}></BulletPoints> */}
         {/* Print out contents of string array as list objects*/}
-        {props.Technologies.map((line) => (
+        {props.Technologies.map((technology) => (
           <motion.div
             variants={skillVariants}
             whileHover="hover"
             whileTap="tap"
           >
             <ul>
-              <FlipCard line={line} />
+              <FlipCard name={technology.technology} icon={technology.icon} />
             </ul>
           </motion.div>
         ))}

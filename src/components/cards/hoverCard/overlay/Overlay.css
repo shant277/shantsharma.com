@@ -11,10 +11,12 @@
 
 @media only screen {
     .overlay {
-        overflow-y: scroll;
+        overflow-y: hidden;
         justify-content: center;
         align-items: flex-start;
         padding: 40px 0px;
+        min-height: 170vh;
+        min-width: 200vw;
     }
 }
 

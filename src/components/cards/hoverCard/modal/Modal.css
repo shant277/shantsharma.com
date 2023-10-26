@@ -1,7 +1,10 @@
 .modal {
+  position: fixed;
+  top: 10%;
+  right: 10%;
   min-height: 600px;
   border-radius: 20px;
-  position: relative;
+
   background-color: rgb(46, 45, 45);
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   display: flex;
@@ -37,10 +40,10 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  column-count: 2; 
-  column-gap: 20px; 
-  max-height: 300px; 
-  overflow-x: auto; 
+  column-count: 2;
+  column-gap: 20px;
+  max-height: 300px;
+  overflow-x: auto;
 }
 
 .project-logo {

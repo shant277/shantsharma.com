@@ -19,6 +19,7 @@ import {
   FaAws,
   FaFilePdf,
   FaJava,
+  FaCalculator,
 } from "react-icons/fa6";
 import { SlGraph } from "react-icons/sl";
 
@@ -85,6 +86,34 @@ export const projects_ = [
     projectIcon: <MdCloudSync className="project-card__image" />,
     projectSummary:
       "IoT Project, sensors connected to a microcontroller, connected to cloud and had an app retrieve the data",
+  },
+  {
+    project: "Investment Calculator",
+    description: (
+      <div>
+        <p>
+          This investment calculator is made using React as its framework,
+          alongside Javascript, Html, & CSS. It takes in 4 fields, a current
+          savings, yearly savings, expected interest per year and the investment
+          durations. Results are displayed in a table. A link can be found here: 
+          <a href="https://shant-investment-calculator.netlify.app/" target="_blank" rel="noopener noreferrer">
+            Investment Calculator
+          </a>
+        </p>
+      </div>
+    ),
+    iconsData: [
+      { icon: <IoLogoReact className="project-logo" />, name: "React" },
+      {
+        icon: <IoLogoJavascript className="project-logo" />,
+        name: "JavaScript",
+      },
+      { icon: <IoLogoCss3 className="project-logo" />, name: "CSS" },
+      { icon: <IoLogoHtml5 className="project-logo" />, name: "HTML" },
+    ],
+    projectIcon: <FaCalculator className="project-card__image" />,
+    projectSummary:
+      "A simple investment calculator developed using React that has helped me get comfortable with using states",
   },
   {
     project: "Syllabi Search Program",
@@ -169,4 +198,3 @@ export const pageTransition = {
 export const pageStyle = {
   position: "absolute",
 };
-

@@ -21,7 +21,9 @@ import {
   FaJava,
   FaCalculator,
 } from "react-icons/fa6";
+
 import { SlGraph } from "react-icons/sl";
+import { BsChatText } from "react-icons/bs";
 
 import Email from "../icons/Email";
 import C from "../icons/C";
@@ -95,8 +97,12 @@ export const projects_ = [
           This investment calculator is made using React as its framework,
           alongside Javascript, Html, & CSS. It takes in 4 fields, a current
           savings, yearly savings, expected interest per year and the investment
-          durations. Results are displayed in a table. A link can be found here: 
-          <a href="https://shant-investment-calculator.netlify.app/" target="_blank" rel="noopener noreferrer">
+          durations. Results are displayed in a table. A link can be found here:
+          <a
+            href="https://shant-investment-calculator.netlify.app/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             Investment Calculator
           </a>
         </p>
@@ -135,8 +141,25 @@ export const projects_ = [
       },
     ],
     projectIcon: <IoNewspaper className="project-card__image" />,
+      projectSummary:
+      "Python program used to match keywords in a given dataset, display results in a nice user interface"
+  },
+  {
+    project: "Quotes generator",
+    description:
+      "I matched keywords in a chosen PDF document to a pre-determined key words list that then displayed results (i.e. matched keywords) in a readable UI. Some functionality included: enabled users to save and load: previous results, settings that customized UI, able to view results in different graph formats (bar, pie, histogram) as well as in a table",
+    iconsData: [
+      { icon: <IoLogoReact className="project-logo" />, name: "React" },
+      {
+        icon: <IoLogoJavascript className="project-logo" />,
+        name: "JavaScript",
+      },
+      { icon: <IoLogoCss3 className="project-logo" />, name: "CSS" },
+      { icon: <IoLogoHtml5 className="project-logo" />, name: "HTML" },
+    ],
+    projectIcon: <BsChatText className="project-card__image" />,
     projectSummary:
-      "Python program used to match keywords in a given dataset, display results in a nice user interface",
+    "A quotes generator devloped using react and uses the type.fit api",
   },
 ];
 

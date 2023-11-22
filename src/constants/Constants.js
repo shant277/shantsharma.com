@@ -11,7 +11,9 @@ import {
   MdWeb,
   MdCloudSync,
   MdOutlineSplitscreen,
+  MdEmail,
 } from "react-icons/md";
+
 import {
   FaTemperatureHigh,
   FaCloudArrowUp,
@@ -20,12 +22,11 @@ import {
   FaFilePdf,
   FaJava,
   FaCalculator,
+  FaLinkedin,
+  FaGithub,
 } from "react-icons/fa6";
-
 import { SlGraph } from "react-icons/sl";
 import { BsChatText } from "react-icons/bs";
-
-import Email from "../icons/Email";
 import C from "../icons/C";
 
 //summary page descriptions
@@ -141,8 +142,8 @@ export const projects_ = [
       },
     ],
     projectIcon: <IoNewspaper className="project-card__image" />,
-      projectSummary:
-      "Python program used to match keywords in a given dataset, display results in a nice user interface"
+    projectSummary:
+      "Python program used to match keywords in a given dataset, display results in a nice user interface",
   },
   {
     project: "Quotes generator",
@@ -159,7 +160,7 @@ export const projects_ = [
     ],
     projectIcon: <BsChatText className="project-card__image" />,
     projectSummary:
-    "A quotes generator devloped using react and uses the type.fit api",
+      "A quotes generator devloped using react and uses the type.fit api",
   },
 ];
 
@@ -193,6 +194,24 @@ export const links = {
   LinkedIn: "https://www.linkedin.com/in/shant-sharma-651178255",
   Github: "https://github.com/shant277",
 };
+
+export const redirectButtons = [
+  {
+    name: "Email",
+    url: "mailto:shant277@gmail.com",
+    icon: <MdEmail size="70%" />,
+  },
+  {
+    name: "LinkedIn",
+    url: "https://www.linkedin.com/in/shant-sharma-651178255",
+    icon: <FaLinkedin size="70%" />,
+  },
+  {
+    name: "Github",
+    url: "https://github.com/shant277",
+    icon: <FaGithub size="70%" />,
+  },
+];
 
 export const pageVariants = {
   initial: {

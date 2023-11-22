@@ -1,11 +1,5 @@
-import Github from "../../icons/github";
-import LinkedIn from "../../icons/github";
-import Email from "../../icons/github";
-
 import { motion } from "framer-motion";
-
 import "./redirectButton.css";
-const Icons = { Github, LinkedIn, Email };
 
 const redirectButtonVariants = {
   hover: {
@@ -16,9 +10,28 @@ const redirectButtonVariants = {
 };
 
 function RedirectPage(props) {
-  const { urls } = props;
-  const genButtons = () => {
-    return Object.entries(urls).map(([title, url]) => {
+  const { redirectButtons } = props;
+
+    const genButtons = () => {
+   
+    return redirectButtons.map((redirectButton) => (
+        
+      <div key={redirectButton.title}>
+        <motion.button
+          className="link-button"
+          key={redirectButton.name}
+          onClick={() => window.open(redirectButton.url, "_blank")}
+          variants={redirectButtonVariants}
+          whileHover="hover"
+          whileTap="tap"
+        >
+          {redirectButton.icon}
+          {redirectButton.name}
+        </motion.button>
+      </div>
+    ));
+    /* return Object.entries(urls).map(([title, url]) => {
+          
       const IconComponent = Icons[title];
       return (
         <div key={title}>
@@ -35,7 +48,7 @@ function RedirectPage(props) {
           </motion.button>
         </div>
       );
-    });
+    }); */
   };
 
   return <div className="link-button-wrapper">{genButtons()}</div>;

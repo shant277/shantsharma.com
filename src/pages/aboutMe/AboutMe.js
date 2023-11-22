@@ -1,7 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
 import SummaryContainer from "./summaryContainer/SummaryContainer";
-import { links } from "../../constants/Constants";
+import { links, redirectButtons } from "../../constants/Constants";
 import {
   pageVariants,
   pageTransition,
@@ -47,7 +47,7 @@ function AboutMe() {
         </p>
       </div>
       <div className="inner-container">
-        <RedirectPage urls={links} />
+              <RedirectPage redirectButtons={redirectButtons} />
       </div>
       <SummaryContainer />
       <footer className="footer">
